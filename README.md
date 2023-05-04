@@ -3,7 +3,7 @@ TensorFlow_Absenteeism_Udemy_Course
 
 This project aims to predict employee absenteeism by analyzing the given dataset from an Udemy course. The dataset contains various features like reason for absence, date, transportation expense, distance to work, age, daily work load average, body mass index, education, children, and pets. The main goal is to create a machine learning model that can predict whether an employee will have excessive absenteeism based on these features.
 
-Data Preprocessing
+## Data Preprocessing
 
 The preprocessing steps include:
 
@@ -17,7 +17,7 @@ The preprocessing steps include:
 8. Combining the dummy and standardized non-dummy columns into a single dataframe.
 9. Splitting the standardized data into training and testing sets using the train_test_split function from sklearn.
 
-Machine Learning Model
+## Machine Learning Model
 
 The machine learning model used in this project is a logistic regression model implemented using TensorFlow. The model architecture includes:
 
@@ -28,7 +28,7 @@ The machine learning model used in this project is a logistic regression model i
 
 The model is compiled using the binary cross-entropy loss function, Adam optimizer, and accuracy as a metric. It is trained with a batch size of 16, validation split of 0.2, and early stopping to prevent overfitting. The model is then evaluated on the test set and its accuracy is reported.
 
-Results
+## Results
 
 The model achieved a test accuracy of 0.7714, indicating its ability to predict employee absenteeism based on the given features. Efforts were made to prevent overfitting, such as using L2 regularization, batch normalization, and dropout layers in the model architecture. An early stopping callback was also employed to stop training when no further improvement in validation accuracy was observed.
 
